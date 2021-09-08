@@ -1,0 +1,126 @@
+/* @media  (min-width:1025px){
+    
+} */
+
+/* @media  (min-width:740px) and (max-width:1024){
+    
+} */
+
+@media  (max-width: 63.9375em){
+    .place-buy-btn{
+        padding: 0.9375em 1em;
+    }
+    
+    .form-control{
+        padding: 0.9375em;
+    }
+
+    .social{
+        font-size: 3em;
+    }
+
+    .social a{
+        padding: 0 0.5em;
+    }
+
+    .copyright a{
+        padding: 0.75em 0;
+        display: inline-block;
+    }
+
+    .infor{
+        line-height: 2.2;
+    }
+
+}
+
+@media  (max-width:46.1875em){
+    
+    #header{
+        overflow: hidden;
+    }
+    
+    #nav > li{
+        display: block;
+    }
+
+    #nav li a{
+        padding: 0.875em 1.5em;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    #header .menu-btn{
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    #header .menu-btn i{
+        font-size: 0.875em;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #000;
+        color: #fff;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 0.625em 2.5625em ;
+
+    }
+
+    .col{
+        width: 100%;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .infor,
+    .contact{
+        width: 100%;
+    }
+
+    .name,
+    .email{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .name{
+        margin-bottom: 0.5em;
+    }
+
+    
+    .btn{
+        display: block;
+        text-align: center;
+       
+    }
+
+    .form-btn{
+        width: 100%;
+    }
+
+    }

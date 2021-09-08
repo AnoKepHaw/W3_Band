@@ -1,0 +1,441 @@
+/*Reset CSS*/
+*   {   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 32px 0;
+    display: inline-block;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+    width: calc(100% /3);
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+
+
+.text-white{
+    color: #fff !important;
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color:  #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 22.5px;
+    padding: 12px 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+    }
+
+#nav .arrow-down{
+    font-size: 12px;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav a{
+    color:#000;
+    padding: 8px 16px;
+    line-height: 22.5px;
+
+}
+
+#header .search-btn{
+    display: inline-block;
+    float: right;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 22.5px;
+    padding: 12px 24px;
+    display: block;
+}
+
+#header .search-btn i:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .menu-btn{
+    display: none;
+}
+
+#header .menu-btn i:hover{
+    background-color: #ccc;
+    color: #000; 
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg')   top center  /   cover   no-repeat;  
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    padding: 32px 16px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading{  
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: 0 0 1px #000;
+}
+
+#slider .text-description{
+    color:#fff;
+    margin: 15px 0;
+    font-weight: 550;
+    font-size: 15px;
+    text-shadow: 0 0 1px #000;
+}
+
+
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+    }
+
+#content .content-text{
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+#content .member-items{
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+    
+}
+
+#content .member-img{
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content .tour-section{
+    background: #000;
+}
+
+.tickets-list{
+    background: #fff;
+    }
+
+.tickets-list li{
+    padding: 8px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+    display: block;
+}
+
+.sold-out{
+    padding: 0 8px;
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    margin-right: 16px;
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin: -3px;
+}
+
+#content .place-item{
+    margin-bottom: 16px;
+    
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+
+.place-img:hover{
+    filter: brightness(60%);
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.place-heading{
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.place-time{
+    margin: 15px 0;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.place-desc{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+
+.place-buy-btn{
+    margin-bottom: 15px;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.icon{
+    padding-right: 12px;
+    text-align: left;
+}
+
+.section-sub-heading{
+    line-height: 1.5;
+}
+
+.infor-form{
+    padding: 24px 0;
+    width:  100%;
+    display: inline-block;
+}
+
+.infor{
+    width: 50%;
+    margin-bottom: 16px;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.del{
+    text-decoration: none;
+}
+
+.contact{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.row-form{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.name-email::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.name-email{
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    
+}
+
+.name{
+    width: 50%;
+    float: left;
+    padding-right:8px;
+    display: inline;
+    
+}
+
+.email{
+    width: 50%;
+    float: left;
+    padding-left: 8px;
+    display: inline;
+}
+
+.form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-btn{
+    float: right;
+    padding: 8px 16px;
+    margin: 16px 0;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+    cursor: pointer;
+
+}
+
+.form-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.map-section img{
+    width: 100%;
+    display: block;
+    filter: grayscale(50%);
+}
+
+#footer{
+    padding: 64px 16px;
+
+}
+.social,
+.copyright{
+    text-align: center;
+    font: 15px;
+    line-height: 1.5;
+    color: grey;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.copyright{
+    margin: 15px 0;
+}
+
+#footer a{
+    color: grey ;
+}
+
+.social a:hover{
+    opacity: 0.6;
+}
